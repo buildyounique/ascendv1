@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background: #0b0b0f;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Cards */
+.card {
+  background: #1b1b24;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  width: 320px;
+}
+
+.hidden { display: none; }
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 12px 20px;
+  background: #3fb950;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+#playedCard {
+  font-size: 64px;
+}
+
+#hand {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cardNumber {
+  background: white;
+  color: black;
+  padding: 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
