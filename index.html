@@ -1,2 +1,52 @@
-Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted): 2026-02-24 16:20:47
-Current User's Login: buildyounique
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ASCEND — The Number Game</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- JOIN SCREEN -->
+  <div id="joinScreen" class="card">
+    <h1>ASCEND</h1>
+    <p>Cooperative Number Chaos</p>
+
+    <input id="alias" placeholder="Your alias" />
+    <button onclick="enterLobby()">ENTER ARENA</button>
+  </div>
+
+  <!-- LOBBY -->
+  <div id="lobby" class="card hidden">
+    <h2>LOBBY</h2>
+    <p id="playerName"></p>
+    <button onclick="startGame()">LAUNCH GAME</button>
+  </div>
+
+  <!-- GAME -->
+  <div id="game" class="hidden">
+
+    <div id="top">
+      <div id="playerInfo"></div>
+      <div id="playedCard">—</div>
+    </div>
+
+    <div id="hand"></div>
+
+  </div>
+
+  <!-- VICTORY -->
+  <div id="victory" class="card hidden">
+    <h1>VICTORY</h1>
+    <p>You cleared your deck</p>
+    <button onclick="location.reload()">NEW SESSION</button>
+  </div>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
